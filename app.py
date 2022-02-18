@@ -22,12 +22,13 @@ def predict():
 
 @app.route("/predict_api", methods=['POST', 'GET'])
 def predict_api():
-    #print(" request.method :",request.method)
+    print(" Hello request.method :",request.method)
     if (request.method == 'POST'):
-        data = request.get_json()
-        final_features = pd.DataFrame([np.array(data)])
+        data = str(request)
+        print(" My Data :", data)
+        #final_features = pd.DataFrame([np.array(data)])
         #output = model_load.predict(final_features).tolist()
-        return jsonify(final_features)
+        return jsonify("HelloWorld")
     else:
         return render_template('index.html')
 

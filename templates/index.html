@@ -28,16 +28,16 @@ input[type=text]:focus {
  <div class="login">
 	<h1 style="text-align:center" id="myHeader">House Price Prediction</h1>
     <CENTER>
-    <form align="center" action="{{ url_for('predict_api')}}"method="post">
-    	<input type="text" style="text-align:center"  name="Area Above Ground Area in sf" placeholder="Area Above Ground Area in sf" required="required" />
+    <form align="center" action="{{ url_for('predict')}}"method="post">
+    	<input type="text" style="text-align:center"  name="AreaAboveGroundAreainsf" placeholder="Area Above Ground Area in sf" required="required" />
         <br>
-        <input type="text" style="text-align:center" name="Over All Quality" placeholder="Over All Quality" required="required" />
+        <input type="text" style="text-align:center" name="OverAllQuality" placeholder="Over All Quality" required="required" />
         <br>
-		<input type="text" style="text-align:center" name="Over All Condition" placeholder="Over All Condition" required="required" />
+		<input type="text" style="text-align:center" name="OverAllCondition" placeholder="Over All Condition" required="required" />
         <br>
-        <input type="text" style="text-align:center" name="Total Basement Area in sq" placeholder="Total Basement Area in sq" required="required" />
+        <input type="text" style="text-align:center" name="TotalBasementAreainsq" placeholder="Total Basement Area in sq" required="required" />
         <br>
-        <input type="text" style="text-align:center" name="Age of House" placeholder="Age of House" required="required" />
+        <input type="text" style="text-align:center" name="AgeofHouse" placeholder="Age of House" required="required" />
         <br>
         <button align="center" class="btn btn-primary" type="submit" value="Submit">Predict</button>
     </form>
