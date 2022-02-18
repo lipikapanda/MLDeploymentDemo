@@ -26,7 +26,7 @@ def predict_api():
     if (request.method == 'POST'):
         data = request.get_json()
         final_features = pd.DataFrame([np.array(data)])
-        output = model_load.predict(final_features).tolist()
+        #output = model_load.predict(final_features).tolist()
         return jsonify("hello")
     else:
         return render_template('index.html')
