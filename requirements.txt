@@ -8,7 +8,6 @@ mkl-service==2.4.0
 munkres==1.1.4
 Pillow==8.4.0
 pytz==2021.3
-sip==4.19.13
 webencodings==0.5.1
 wincertstore==0.2
 numpy
